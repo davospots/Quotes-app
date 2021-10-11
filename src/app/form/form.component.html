@@ -1,9 +1,16 @@
 <h1>Quotes App</h1>
 <div>
-    <form action="">
-        <h3>Type in quotes here</h3>
-        <input placeholder="Your Name" type="text" name="" autocomplete="off">
-        <input placeholder="Publisher" type="text" name="" autocomplete="off">
-        <textarea placeholder="Type quote.." name="" id="" cols="48" rows="5" autocomplete="off"></textarea><br>
-        <button class="btn btn-md btn-success" type="submit">SUBMIT</button></form>
+    <form (ngSubmit)='submitQuote()'>
+        <h3>Type in quotes here :</h3>
+        <input class="form-control" placeholder="Your Name" type="text" name="name"  autocomplete="off">
+        <input class="form-control" placeholder="Publisher" type="text" name="publisher"  autocomplete="off">
+        <textarea class="form-control" placeholder="Type quote.." name="quote" id="" cols="48" rows="5"  autocomplete="off"></textarea><br>
+        <button class="btn btn-md btn-outline-success" type="submit">SUBMIT</button>
+    </form>
+    <hr>
+    <div>
+        <p>Name: <span>{{formName}}</span></p>
+        <p>Author: <span>{{formPublisher}}</span></p>
+        <p>Quote: <span>{{formQuote}}</span></p>
+    </div>
 </div>

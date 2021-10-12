@@ -10,10 +10,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormComponent implements OnInit {
 
- 
+
 
   submitQuote(){
-
+    
   }
   
 
@@ -23,3 +23,7 @@ export class FormComponent implements OnInit {
   }
 
 }
+function value(value: any) {
+  throw new Error('Function not implemented.');
+}
+

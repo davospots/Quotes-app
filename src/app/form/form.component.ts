@@ -10,11 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormComponent implements OnInit {
 
-  public formName: string = "";
-  public formPublisher: string = "";
-  public formQuote: string = "";
-  published!: Date;
-  newQuote: any;
+ 
 
   submitQuote(){
 
